@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Sandwich Maker</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h2>Sandwiches 'R Us</h2>
+
+  <div id="bread">
+  <label for="breads">Bread:</label>
+  <!-- value types must match keys in our js files(Bread.js) or when we pass the value(from index.html) to the function argument in the js file, it will come back as NaN -->
+    <input type="checkbox" value="white" name="White">White
+    <input type="checkbox" value="wheat" name="Wheat">Wheat
+    <input type="checkbox" value="rye" name="Rye">Rye
+    <input type="checkbox" value="wrap" name="Wrap">Wrap
+    <input type="checkbox" value="lettuce" name="Lettuce">Lettuce
+  </div>
+
+  <div id="meat">
+  <label for="meats">Meat:</label>
+    <input type="checkbox" value="none" name="None">None
+    <input type="checkbox" value="turkey" name="Turkey">Turkey
+    <input type="checkbox" value="ham" name="Ham">Ham
+    <input type="checkbox" value="roast beef" name="Roast Beef">Roast Beef
+    <input type="checkbox" value="salami" name="Salami">Salami
+    <input type="checkbox" value="bacon" name="Bacon">Bacon
+  </div>
+
+  <div id="cheese">
+  <label for="cheeses">Cheese:</label>
+    <input type="checkbox" value="none" name="None">None
+    <input type="checkbox" value="provolone" name="Provolone">Provolone
+    <input type="checkbox" value="swiss" name="Swiss">Swiss
+    <input type="checkbox" value="mozzarella" name="Mozzarella">Mozzarella
+    <input type="checkbox" value="gouda" name="Gouda">Gouda
+  </div>
+
+  <div id="condiment">
+  <label for="condiments">Condiments:</label>
+    <input type="checkbox" value="mayo" name="Mayo">Mayo
+    <input type="checkbox" value="mustard" name="Mustard">Mustard
+    <input type="checkbox" value="pesto" name="Pesto">Pesto
+    <input type="checkbox" value="oil" name="Oil">Oil
+    <input type="checkbox" value="vinegar" name="Vinegar">Vinegar
+    <input type="checkbox" value="salt" name="Salt">Salt
+    <input type="checkbox" value="pepper" name="Pepper">Pepper
+    <input type="checkbox" value="hot pepper relish" name="Hot Pepper Relish">Hot Pepper Relish
+  </div>
+
+  <div id="vegetable">
+  <label for="vegetables">Veggies:</label>
+    <input type="checkbox" value="lettuce" name="Lettuce">Lettuce
+    <input type="checkbox" value="tomato" name="Tomato">Tomato
+    <input type="checkbox" value="onion" name="Onion">Onion
+    <input type="checkbox" value="pickle" name="Pickle">Pickle
+    <input type="checkbox" value="banana peppers" name="Banana Peppers">Banana Peppers
+  </div>
+
+  <div>
+    <div id="total">Total for sandwich: </div>
+    <div id="final">
+    </div>
+  </div>
+
+  <script src="javascripts/SandwichMaker.js"></script>
+  <script src="javascripts/Breads.js"></script>
+  <script src="javascripts/Meats.js"></script>
+  <script src="javascripts/Cheeses.js"></script>
+  <script src="javascripts/Condiments.js"></script>
+  <script src="javascripts/Veggies.js"></script>
+  <script src="javascripts/DOMHandler.js"></script>
+</body>
+</html>
