@@ -11,6 +11,7 @@
 
   <div id="bread">
   <label for="breads">Bread:</label>
+  <!-- value types must match keys in our js files(Bread.js) or when we pass the value(from index.html) to the function argument in the js file, it will come back as NaN -->
     <input type="checkbox" value="white" name="White">White
     <input type="checkbox" value="wheat" name="Wheat">Wheat
     <input type="checkbox" value="rye" name="Rye">Rye
@@ -58,13 +59,15 @@
     <input type="checkbox" value="banana peppers" name="Banana Peppers">Banana Peppers
   </div>
 
-  <div id="final">
-
+  <div>
+    <div id="total">Total for sandwich: </div>
+    <div id="final">
+    </div>
   </div>
 
   <script src="javascripts/SandwichMaker.js"></script>
-  <script src="javascripts/Meats.js"></script>
   <script src="javascripts/Breads.js"></script>
+  <script src="javascripts/Meats.js"></script>
   <script src="javascripts/Cheeses.js"></script>
   <script src="javascripts/Condiments.js"></script>
   <script src="javascripts/Veggies.js"></script>
